@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+jar {
+	baseName = 'compile'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compileOnly files('../RichTea/build/libs/RichTea.jar')
+    compileOnly 'org.antlr:antlr-runtime:3.5.2'
+}
